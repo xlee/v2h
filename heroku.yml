@@ -1,0 +1,6 @@
+build:
+  docker:
+    web: Dockerfile
+
+run:
+  web: /usr/local/bin/xray run -config /usr/local/bin/config.json -port $PORT

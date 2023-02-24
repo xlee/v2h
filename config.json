@@ -1,0 +1,32 @@
+{
+    "inbounds": [
+        {
+            "port": "YOUR_CUSTOM_PORT",
+            "protocol": "vmess",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "YOUR_CUSTOM_UUID"
+                    }
+                ],
+                "decryption": "none"
+            },
+            "streamSettings": {
+                "network": "ws",
+                "wsSettings": {
+                    "path": "/YOUR_CUSTOM_PATH"
+                },
+                "tlsSettings": {
+                    "allowInsecure": true,
+                    "certificates": [
+                        {
+                            "certificateFile": "/app/cert.crt",
+                            "keyFile": "/app/cert.key"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+  ...
+}
